@@ -3,22 +3,17 @@
 .container{
   text-align: center;
   margin: 0 auto;
+  max-width: 100%;
+  padding-bottom: 10%;
+  padding-top:5%;
 }
 .navbar-nav > li{
   margin-left:30px;
   margin-right:30px;
 }
-.name{
-  font-size: 5em;
-  color: white;
-  font-family: 'Racing Sans One', cursive;
 
-}
 
-.lead-bio{
-  color:white;
-  font-size: 2em;
-}
+
 
 #grad {
     background-image: linear-gradient(dodgerblue, lightskyblue);
@@ -30,10 +25,189 @@
   }
 
   footer{
-    background-color: white;
+    max-width: 100%;
 
   }
 
   #foot{
     height:50%;
+  }
+
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(67, 87, 175);
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 30px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
+
+
+  /* Animations */
+
+
+  .lead-bio{
+    color:white;
+    font-size: 2em;
+    animation-delay: 2s;
+    animation: fadein 4s;
+    -moz-animation: fadein 4s; /* Firefox */
+    -webkit-animation: fadein 4s; /* Safari and Chrome */
+    -o-animation: fadein 4s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+  .name {
+
+    font-size: 5em;
+    color: white;
+    font-family: 'Racing Sans One', cursive;
+    animation: fadein 4s;
+    -moz-animation: fadein 4s; /* Firefox */
+    -webkit-animation: fadein 4s; /* Safari and Chrome */
+    -o-animation: fadein 4s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 10%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+#foot{
+  margin-right: 2%;
+  text-align: right;
+}
+
+#foot a{
+  
+    margin-left:30px;
+    margin-right:30px;
+  
+}
+
+.lead{
+  color: white;
+}
+
+
+/* Download*/
+
+#iphone{
+margin-right: 50%;
+  width: 25%;
+  height: auto;
+}
+
+@media (max-width: 576px) {
+
+  #iphone{
+    margin-right: 10%;
+      width: 50%;
+      height: auto;
+    }
+
   }
