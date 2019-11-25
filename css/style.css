@@ -34,9 +34,16 @@
   width:5%;
 }
 
+p{
+  color: white;
+  font-size: 30px;
+}
+
 .heading{
   text-align: center;
   padding-top: 5%;
+  font-family: 'Questrial', sans-serif;
+
 }
 
 
@@ -124,12 +131,31 @@
     }
 }
 
+.smoke{
+  
+  -webkit-animation: fadeinout 10s linear forwards;
+    animation: fadeinout 10s linear forwards;
+    opacity: 0;
+}
+
+@-webkit-keyframes fadeinout {
+  50% { opacity: 1; }
+}
+
+@keyframes fadeinout {
+  50% { opacity: 1; }
+}
+
 
   .name {
 
+    margin-bottom: 5%;
     font-size: 5em;
     color: white;
-    font-family: 'Racing Sans One', cursive;
+
+
+    font-family: 'Questrial', sans-serif;
+
     animation: fadein 4s;
     -moz-animation: fadein 4s; /* Firefox */
     -webkit-animation: fadein 4s; /* Safari and Chrome */
