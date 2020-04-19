@@ -1,7 +1,20 @@
 
+.butn {
+  background-color: black;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+}
 
+/* Darker background on mouse-over */
+.butn:hover {
+  background-color: grey;
+}
 
-
+.textt{
+  font-size: .8em;
+}
 
 
 
@@ -66,3 +79,6 @@ p{
     }
 
   }
+
+
+  
