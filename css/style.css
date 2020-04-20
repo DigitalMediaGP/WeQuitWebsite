@@ -16,6 +16,16 @@
   font-size: .8em;
 }
 
+.carousel {
+  height: 400px;
+}
+
+.carousel-item,
+.carousel-inner,
+.carousel-inner img {
+  height: 100%;
+}
+
 
 
 #ionic{
